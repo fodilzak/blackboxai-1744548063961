@@ -1,0 +1,9 @@
+/* Custom styles for the extreme weather tracking application */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
