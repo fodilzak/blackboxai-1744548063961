@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des Phénomènes Extrêmes en Algérie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold my-4">Suivi des Phénomènes Extrêmes en Algérie</h1>
+        <div id="map" class="h-96"></div>
+        <form id="reportForm" class="mt-4">
+            <input type="text" id="eventType" placeholder="Type d'événement" class="border p-2 w-full mb-2" required>
+            <input type="text" id="location" placeholder="Emplacement" class="border p-2 w-full mb-2" required>
+            <textarea id="description" placeholder="Description" class="border p-2 w-full mb-2" required></textarea>
+            <button type="submit" class="bg-blue-500 text-white p-2">Signaler un événement</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
